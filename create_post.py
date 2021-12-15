@@ -1,11 +1,10 @@
 import requests
-from decouple import config
 import os
 import random
 from PIL import Image, ImageDraw, ImageFont
 import pandas as pd
 
-PIX_API_KEY = config('PIX_API_KEY')
+PIX_API_KEY = '22635604-3cbf5a1924fbf5eb8968aac6b'
 
 
 def get_images(search_term, number_images=20, order='latest', image_type='photo', safesearch='true', min_width='800', min_height='800'):
